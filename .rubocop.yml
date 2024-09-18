@@ -1,0 +1,14 @@
+# .rubocop.yml
+
+# Style/StringLiterals:
+#   Enabled: false
+
+# Optional: If you want to explicitly allow single quotes
+Style/StringLiterals:
+  EnforcedStyle: single_quotes
+
+Style/Documentation:
+  Enabled: false
+
+reporters:
+  YARD: false
