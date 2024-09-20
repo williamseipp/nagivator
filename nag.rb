@@ -9,5 +9,5 @@ configure do
 end
 
 get '/' do
-  'Welcome to nagivator'
+  Time.now.strftime("%-I:%M")
 end
