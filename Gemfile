@@ -4,6 +4,7 @@ gem 'erubis'
 gem 'sinatra'
 gem 'sinatra-contrib'
 gem 'webrick'
+gem 'tzinfo'
 
 group :production do
   gem 'puma'

@@ -1,4 +1,5 @@
 require 'sinatra'
+require 'tzinfo'
 require 'sinatra/content_for'
 require 'tilt/erubis'
 
@@ -8,6 +9,11 @@ configure do
   set :erb, escape_html: true
 end
 
+
 get '/' do
-  Time.now.strftime("%-I:%M")
+  user_timezone = 'America/Los_Angeles'
+  timezone = TZInfo::Timezone.get(user_timezone)
+  current_time = timezone.now.strftime("%-I:%M")
+
+  current_time
 end
