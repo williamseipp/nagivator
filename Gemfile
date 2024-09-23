@@ -1,10 +1,11 @@
 source 'https://rubygems.org'
 
 gem 'erubis'
+gem 'pg'
 gem 'sinatra'
 gem 'sinatra-contrib'
-gem 'webrick'
 gem 'tzinfo'
+gem 'webrick'
 
 group :production do
   gem 'puma'
