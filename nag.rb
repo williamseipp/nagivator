@@ -24,5 +24,5 @@ get '/' do
   timezone = TZInfo::Timezone.get(user_timezone)
   current_time = timezone.now.strftime("%-I:%M")
 
-  current_time
+  @storage.all_events[0][:name].to_s
 end
